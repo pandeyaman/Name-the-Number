@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Name That Number</title>
+</head>
+<body>
+    <header class="flex-container">
+            <button class="btn-retry">Retry</button>
+                <p class="rules">Select number between 1 - 99</p>
+    </header>
+    <section class="flex-container number-banner">
+        <p>Guess the Number!</p>
+        <span class="span-random-number">?</span>
+    </section>
+    <main class="flex-container main-content">
+        <section class="input-section">
+            <input type="number" min="0" max="99" class="input-number">
+            <button class="btn-check">Check!</button>
+        </section>
+        <section class="display-section">
+            <span class="span-comments display-section-margin">Start Guessing...</span>
+            <p class="display-section-margin">Score: 
+                <span class="span-score display-section-margin">20</span>
+            </p>
+            <p class="display-section-margin">
+                Highscore:
+                <span class="span-highscore">0</span>
+            </p>
+        </section>
+    </main>  
+
+    <script src="/script.js"></script>
+</body>
+</html>
