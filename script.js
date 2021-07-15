@@ -6,12 +6,12 @@ function randomGenerator(){
 randomGenerator();
 
 function guessIsHigh(){
-    document.querySelector(".span-comments").textContent  = "High, guess a bit low"; 
+    document.querySelector(".span-comments").textContent  = "Too High"; 
     reduceScore();
 }
 
 function guessIsLow(){
-    document.querySelector(".span-comments").textContent  = "Low, guess something high"; 
+    document.querySelector(".span-comments").textContent  = "Too Low"; 
     reduceScore();
 }
 
@@ -32,7 +32,7 @@ function reduceScore(){
     }
     else{
         document.querySelector(".span-score").innerHTML = Number(currentScore);
-        document.querySelector(".span-comments").innerHTML = "You Lost the Game! Better luck next time"
+        document.querySelector(".span-comments").innerHTML = "You Lost the Game!"
         document.querySelector(".btn-check").disabled = true;
     }
     
@@ -44,6 +44,7 @@ function retryGame(){
     document.querySelector(".span-score").textContent = "20";
     document.querySelector(".input-number").value="";
     document.querySelector(".span-random-number").innerHTML="?";
+    document.querySelector(".btn-check").disabled = false;
 }
 
 

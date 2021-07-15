@@ -7,17 +7,19 @@ body{
     width: 80%;
     margin: 3% auto;
     background-color: #221E2C;
-    color: #fdfdfd;
+    color: #FFE218;
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
 }
 
 button{
-    background-color: black;
+    background-color: #221E2C;
     color: #FFE218;
     font-family: 'Press Start 2P', cursive;
     padding: 30px;
     font-size: 100%;
+    cursor: pointer;
+    border: 1px solid #FFE218;
 }
 
 header{
@@ -26,20 +28,32 @@ header{
 
 .flex-container{
     display: flex;
-    margin: 100px 0px;
+    margin: 75px 0px;
+    /* border: 2px solid mediumaquamarine; */
 }
 
 .btn-retry{
-    padding: 10px;
+    padding: 20px;
+}
+
+.btn-retry:hover{
+    color: #221E2C;
+    background-color: #FFE218;
+    transition: 0.3s;
 }
 
 .rules{
-    font-size: 100%;
+    margin: auto 0;
+    font-size: 80%;
 }
 
 .number-banner{
     flex-direction: column;
     text-align: center;
+}
+
+.span-guess-banner{
+    font-size: 200%;
 }
 
 .span-random-number{
@@ -50,13 +64,13 @@ header{
 .main-content{
     justify-content:space-around;
     text-align: center;
+    /* border: 1px solid khaki; */
 }
 
 .input-section{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 20vh;
 }
 
 .input-number{
@@ -69,6 +83,17 @@ header{
     font-size: 16px;
     border: 5px solid #FFE218;
     text-align: center;
+    outline: none;
+}
+
+::placeholder{
+    font-size:10px;
+} 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .btn-check{
@@ -76,12 +101,25 @@ header{
     width: 110%;
 }
 
+.btn-check:hover{
+    color: #221E2C;
+    background-color: #FFE218;
+    transition: 0.3s;
+}
+
 .display-section{
     display: flex;
     flex-direction: column;
+    text-align: start;
+    width: 25%;
+    /* border: mediumaquamarine 1px solid; */
 }
 
 .display-section-margin{
     padding: 15px 0px;
+}
+
+footer{
+    text-align: center;
 }
 

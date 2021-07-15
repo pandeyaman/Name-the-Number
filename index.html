@@ -16,12 +16,12 @@
                 <p class="rules">Select number between 1 - 99</p>
     </header>
     <section class="flex-container number-banner">
-        <p>Guess the Number!</p>
+        <p class="span-guess-banner">Guess the Number!</p>
         <span class="span-random-number">?</span>
     </section>
     <main class="flex-container main-content">
         <section class="input-section">
-            <input type="number" min="0" max="99" class="input-number">
+            <input type="number" min="0" max="99" class="input-number" placeholder="Enter Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Number'">
             <button class="btn-check">Check!</button>
         </section>
         <section class="display-section">
@@ -35,6 +35,9 @@
             </p>
         </section>
     </main>  
+    <footer>
+        <p>Made by <span>Aman Pandey</span></p>
+    </footer>
 
     <script src="/script.js"></script>
 </body>
