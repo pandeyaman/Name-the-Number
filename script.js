@@ -6,19 +6,20 @@ function randomGenerator(){
 randomGenerator();
 
 function guessIsHigh(){
-    document.querySelector(".span-comments").textContent  = "Too High"; 
+    document.querySelector(".span-comments").textContent  = "🔺 Too High"; 
     reduceScore();
 }
 
 function guessIsLow(){
-    document.querySelector(".span-comments").textContent  = "Too Low"; 
+    document.querySelector(".span-comments").textContent  = " 🔻 Too Low"; 
     reduceScore();
 }
 
 function correctGuess(){
-    document.querySelector(".span-comments").textContent = "Correct Guess";  
+    document.querySelector(".span-comments").textContent = "✔️ Correct Guess";  
     currentHighScore = Number(document.querySelector(".span-highscore").textContent);
     currentScore = Number(document.querySelector(".span-score").textContent);
+    document.querySelector('.span-random-number').style.color="#16C60C";   
     if(currentScore>=currentHighScore)   
     document.querySelector(".span-highscore").textContent = currentScore;
     document.querySelector(".span-random-number").innerHTML=randomNumber;
@@ -34,7 +35,7 @@ function reduceScore(){
     else{
         document.querySelector(".span-score").innerHTML = Number(currentScore);
         document.querySelector(".span-comments").classList.add("span-wrong");
-        document.querySelector(".span-comments").innerHTML = "You Lost the Game!"
+        document.querySelector(".span-comments").innerHTML = "❌ You Lost the Game!"
         document.querySelector(".btn-check").disabled = true;
     }
     
