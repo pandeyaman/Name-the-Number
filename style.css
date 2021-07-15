@@ -12,6 +12,7 @@ body{
     font-size: 16px;
 }
 
+
 button{
     background-color: #221E2C;
     color: #FFE218;
@@ -105,6 +106,14 @@ input::-webkit-inner-spin-button {
     color: #221E2C;
     background-color: #FFE218;
     transition: 0.3s;
+}
+
+.span-correct{
+    color: #7CFC00;
+}
+
+.span-wrong{
+    color: #FF0000;
 }
 
 .display-section{

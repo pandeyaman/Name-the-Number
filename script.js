@@ -22,6 +22,7 @@ function correctGuess(){
     if(currentScore>=currentHighScore)   
     document.querySelector(".span-highscore").textContent = currentScore;
     document.querySelector(".span-random-number").innerHTML=randomNumber;
+    document.querySelector(".span-comments").classList.add("span-correct");
 }
 
 function reduceScore(){
@@ -32,6 +33,7 @@ function reduceScore(){
     }
     else{
         document.querySelector(".span-score").innerHTML = Number(currentScore);
+        document.querySelector(".span-comments").classList.add("span-wrong");
         document.querySelector(".span-comments").innerHTML = "You Lost the Game!"
         document.querySelector(".btn-check").disabled = true;
     }
@@ -45,6 +47,8 @@ function retryGame(){
     document.querySelector(".input-number").value="";
     document.querySelector(".span-random-number").innerHTML="?";
     document.querySelector(".btn-check").disabled = false;
+    document.querySelector(".span-comments").classList.remove("span-correct");
+    document.querySelector(".span-comments").classList.remove("span-wrong");
 }
 
 
